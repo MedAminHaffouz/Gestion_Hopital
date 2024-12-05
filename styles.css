@@ -338,3 +338,70 @@ button:active {
     background-color: rgba(0, 0, 0, 0.45);
 }
 
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Button for dropdown */
+.dropbtn {
+    background-color: transparent;
+    color: dimgrey;
+    font-size: 20px;
+    font-family: "Arial Nova";
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.dropbtn:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+    color: dimgrey;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    font-family: "Arial Nova";
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: black;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.links-bar {
+    padding: 0 20px; /* Ajoute un espace de 20px de chaque côté */
+    /* ou
+    margin: 0 auto; /* Centrage automatique
+    max-width: 1200px; /* Limite la largeur pour un aspect professionnel */
+}
+
+.links-bar a {
+    line-height: 50px; /* Doit correspondre à la hauteur de la barre de navigation */
+    vertical-align: middle; /* Optionnel, pour un meilleur ajustement */
+}
